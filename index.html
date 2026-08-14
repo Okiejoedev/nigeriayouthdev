@@ -31,6 +31,23 @@
     overflow-x: hidden;
   }
 
+ .nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--white);
+  letter-spacing: -0.5px;
+  transition: color 0.3s;
+}
+
+.nav-logo img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  display: block;
+}
   /* --- NAVIGATION --- */
   nav {
     position: fixed; top: 0; left: 0; right: 0;
@@ -505,11 +522,10 @@
 
 <!-- Navigation -->
 <nav id="navbar">
-<nav id="navbar">
-<div class="nav-logo">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Coat_of_arms_of_Nigeria.svg" alt="Coat of Arms of Nigeria">
-  Nigeria<span>.</span> Youth
-</div>
+ <div class="nav-logo">
+    <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Coat_of_arms_of_Nigeria.svg" alt="Coat of Arms of Nigeria">
+    Nigeria<span>.</span> Youth
+  </div>
   <ul class="nav-links" id="navLinks">
     <li><a href="#about" onclick="closeMenu()">About</a></li>
     <li><a href="#programs" onclick="closeMenu()">Programs</a></li>
